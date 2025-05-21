@@ -19,6 +19,15 @@ int main() {
     }
 
     printf("\n");
+
+        printf("Movimentação da Torre:\n");
+    i = 0;
+    while (i < TORRE_MOV) {
+        printf("Direita\n");
+        i++;
+    }
+
+    printf("\n");
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
