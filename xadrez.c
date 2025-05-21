@@ -28,6 +28,16 @@ int main() {
     }
 
     printf("\n");
+
+    printf("Movimentação da Rainha:\n");
+    i = 0;
+    do {
+        printf("Esquerda\n");
+        i++;
+    } while (i < RAINHA_MOV);
+
+    return 0;
+}
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
