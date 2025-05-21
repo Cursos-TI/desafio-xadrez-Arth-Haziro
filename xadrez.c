@@ -9,6 +9,16 @@
 #define RAINHA_MOV 8
 
 int main() {
+
+    int i;
+
+    printf("Movimentação do Bispo:\n");
+    for (i = 0; i < BISPO_MOV; i++) {
+        printf("Cima\n");
+        printf("Direita\n");
+    }
+
+    printf("\n");
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
