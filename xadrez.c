@@ -21,6 +21,17 @@ void moverRainha(int mov) {
     moverRainha(mov - 1);
 }
 
+void moverBispo(int i) {
+    if (i >= BISPO_MOV) return;
+
+    for (int j = 0; j < 1; j++) {
+        printf("Cima\n");
+        printf("Direita\n");
+    }
+
+    moverBispo(i + 1);
+}
+
 int main() {
 
     int i, j;
