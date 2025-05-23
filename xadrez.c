@@ -15,6 +15,12 @@ void moverTorre(int mov) {
     moverTorre(mov - 1);
 }
 
+void moverRainha(int mov) {
+    if (mov == 0) return;
+    printf("Esquerda\n");
+    moverRainha(mov - 1);
+}
+
 int main() {
 
     int i, j;
