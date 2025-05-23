@@ -7,6 +7,7 @@
 #define BISPO_MOV 5
 #define TORRE_MOV 5
 #define RAINHA_MOV 8
+#define CAVALO_L_MOV 3
 
 int main() {
 
