@@ -9,6 +9,12 @@
 #define RAINHA_MOV 8
 #define CAVALO_L_MOV 3
 
+void moverTorre(int mov) {
+    if (mov == 0) return;
+    printf("Direita\n");
+    moverTorre(mov - 1);
+}
+
 int main() {
 
     int i, j;
