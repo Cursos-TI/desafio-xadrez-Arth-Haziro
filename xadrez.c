@@ -32,6 +32,30 @@ void moverBispo(int i) {
     moverBispo(i + 1);
 }
 
+void moverCavalo() {
+    int cima = 0, direita = 0;
+
+    printf("Movimentação do Cavalo (em L):\n");
+
+    for (int passo = 0; passo < 3; passo++) {
+        if (passo == 2) break;
+        for (int i = 0, j = 0; i < 2 || j < 1; i++, j++) {
+            if (i < 2) {
+                printf("Cima\n");
+                cima++;
+            }
+
+            if (j == 0) {
+                printf("Direita\n");
+                direita++;
+                continue;
+            }
+        }
+        break;
+    }
+    printf("--- Fim do L ---\n");
+}
+
 int main() {
 
     int i, j;
