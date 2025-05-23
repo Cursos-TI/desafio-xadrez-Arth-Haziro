@@ -11,7 +11,7 @@
 
 int main() {
 
-    int i;
+    int i, j;
 
     printf("Movimentação do Bispo:\n");
     for (i = 0; i < BISPO_MOV; i++) {
@@ -36,6 +36,21 @@ int main() {
         printf("Esquerda\n");
         i++;
     } while (i < RAINHA_MOV);
+
+    printf("\n");
+
+    printf("Movimentação do Cavalo:\n");
+    for (i = 0; i < CAVALO_L_MOV; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("Baixo\n");
+        }
+        j = 0;
+        while (j < 1) {
+            printf("Esquerda\n");
+            j++;
+        }
+        printf("---\n"); 
+    }
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
