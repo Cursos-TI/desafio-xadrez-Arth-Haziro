@@ -58,46 +58,19 @@ void moverCavalo() {
 
 int main() {
 
-    int i, j;
-
     printf("Movimentação do Bispo:\n");
-    for (i = 0; i < BISPO_MOV; i++) {
-        printf("Cima\n");
-        printf("Direita\n");
-    }
-
+    moverBispo(0);
     printf("\n");
 
-        printf("Movimentação da Torre:\n");
-    i = 0;
-    while (i < TORRE_MOV) {
-        printf("Direita\n");
-        i++;
-    }
-
+    printf("Movimentação da Torre:\n");
+    moverTorre(TORRE_MOV);
     printf("\n");
 
     printf("Movimentação da Rainha:\n");
-    i = 0;
-    do {
-        printf("Esquerda\n");
-        i++;
-    } while (i < RAINHA_MOV);
-
+    moverRainha(RAINHA_MOV);
     printf("\n");
 
-    printf("Movimentação do Cavalo:\n");
-    for (i = 0; i < CAVALO_L_MOV; i++) {
-        for (j = 0; j < 2; j++) {
-            printf("Baixo\n");
-        }
-        j = 0;
-        while (j < 1) {
-            printf("Esquerda\n");
-            j++;
-        }
-        printf("---\n"); 
-    }
+    moverCavalo();
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
